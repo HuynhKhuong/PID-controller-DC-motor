@@ -49,13 +49,27 @@ This document has well elaborated the foundational knowledge about PID controlle
 
 ## Hardware Requirements
 
-- *Place holder*
-- *Place holder*
+The project may come with 2 variants: 
+- Light-Weight Variant which makes use of old good friend [STM32F103C8T6](https://hshop.vn/kit-ra-chon-stm32f103c8t6)
+- Bigger Variant to play with RTOS (FreeRTOS specifically) via [STM32F407](https://hshop.vn/kit-stm32f4-discovery-armcortex-m4-dsp-core)
+
+Other hardware items are described in a [separate document](docs/Hardware_Description.md)
 
 ## Software Requirements
 
-- *Place holder* 
-- *Place holder* 
+In accordance to multiple hardware variants, Software versions are splitted into sandboxes
+- Sandbox for STM32F103C8T6 variant
+- Sandbox for STM32F407 variant
+
+This project utilizes well-supported [IDE **STM32CUBE**](https://www.st.com/en/development-tools/stm32cubeide.html) to achieve HAL from different hardware variants
+Sandboxes differs in terms of: 
+- Hardware configuration set
+- Software setup (bare while loop or RTOS setup)
+
+Application layer is modularized as the logic kernel and is used in common
+Adapter for application logic kernel is needed between 2 software setups
+
+Software Architecture design is described in a [separate document](docs/Software_Architecture_Design.md)
 
 ## Installation
 
