@@ -51,10 +51,10 @@ This project implements a PID controller for precise DC motor control. The PID a
 ## Software Requirements
 
 - Arduino IDE / PlatformIO / Other development environment
-- Required libraries:
-  - [Library Name] - for motor control
-  - [Library Name] - for encoder reading
-  - [Library Name] - for communication
+- Required libraries (update with actual libraries used):
+  - PID library (e.g., Arduino-PID-Library)
+  - Encoder library (e.g., Encoder.h)
+  - Communication library (if using external interface)
 - Serial monitor or plotting tool for data visualization
 
 ## Installation
@@ -139,7 +139,13 @@ Adjust based on your specific motor and load characteristics.
 ## Circuit Diagram
 
 ```
-[Add your circuit diagram here]
+[Add your circuit diagram here - include a schematic showing:
+ - Microcontroller pin connections
+ - Motor driver wiring (PWM, direction pins, enable)
+ - Encoder connections (A, B channels)
+ - Power supply connections
+ - Any pull-up/pull-down resistors
+ You can use tools like Fritzing, EasyEDA, or draw.io]
 ```
 
 ## Configuration
