@@ -23,7 +23,7 @@ This project implements a PID controller for precise DC motor control (In terms 
 
 ### What is PID Control?
 
-Review my [capstone projects report](docs\BAOCAODOAN1_HuynhKhuong_1812689.pdf)
+Review my [capstone projects report](docs/BAOCAODOAN1_HuynhKhuong_1812689.pdf)
 This document has well elaborated the foundational knowledge about PID controller! 
 
 ## Features
@@ -81,42 +81,28 @@ cd PID-controller-DC-motor
 
 ```cpp
 // Example code snippet
-PIDController motor(Kp, Ki, Kd);
-motor.setSetpoint(targetSpeed);
-motor.compute();
-motor.updateMotor();
 ```
 
 ### Serial Commands
 
-- `SET_SPEED <value>` - Set target speed (RPM)
-- `SET_PID <Kp> <Ki> <Kd>` - Update PID parameters
-- `START` - Start motor control
-- `STOP` - Stop motor control
-- `STATUS` - Display current status
+*TBD*
 
 ## PID Tuning
-
+### Other Tuning Method
 ### Manual Tuning Method
 
-1. **Start with P only**: Set Ki and Kd to 0
-   - Increase Kp until the system oscillates
-   - Reduce Kp to 50-60% of this value
+1. **Start with P only**: 
 
 2. **Add Integral**: 
-   - Gradually increase Ki to eliminate steady-state error
-   - Watch for increased overshoot
 
 3. **Add Derivative**:
-   - Increase Kd to reduce overshoot and oscillation
-   - Find the optimal balance
 
 ### Recommended Starting Values
 
 ```
-Kp = 1.0
-Ki = 0.1
-Kd = 0.01
+Kp = xx
+Ki = xx
+Kd = xx
 ```
 
 Adjust based on your specific motor and load characteristics.
@@ -160,7 +146,7 @@ Edit the configuration parameters in the main file or `config.h`:
 | *Place Holder* | *Place Holder* | *Place Holder* |
 
 ## Acknowledgments
-- [Original capstone project from university](docs\BAOCAODOAN1_HuynhKhuong_1812689.pdf)
+- [Original capstone project from university](docs/BAOCAODOAN1_HuynhKhuong_1812689.pdf)
 
 ---
 
