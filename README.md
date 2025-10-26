@@ -19,7 +19,14 @@ A PID (Proportional-Integral-Derivative) controller implementation for DC motor 
 
 ## Overview
 
-This project implements a PID controller for precise DC motor control (In terms of Position and Velocity). The PID algorithm continuously calculates an error value as the difference between a desired setpoint and a measured process variable, applying a correction based on proportional, integral, and derivative terms.
+This project implements a PID controller for precise DC motor control (In terms of Position and Velocity).
+
+### Why I started this project
+
+Purely just for studying and hobby! My major in University is System Control and Modeling. I dealt with Matlab and Simulink all the time. Of course all of projects are mathematical simulation of a particular system and I emploied several types of controller into such systems 
+As the matter of fact, I haven't dealt with the variable of external factors (noise, environment impact) in the real model, which, to be honest, is embarassing. As consequences, The real model (in terms of hardware and software) I built during my capstone project isn't stable at all. Of course it is decent to qualify that I could pass the exam, but I do know there's spacious room for improvement. Therefore, This repository is for it! 
+Besides, this is for target readers who are diving into the field of Automatic control, can refer as an example for your big assignments or your capstone project. It's nothing fancy, but it could give you insights about what you're studying.
+Happy learning!
 
 ### What is PID Control?
 
@@ -147,6 +154,7 @@ Edit the configuration parameters in the main file or `config.h`:
 
 ## Acknowledgments
 - [Original capstone project from university](docs/BAOCAODOAN1_HuynhKhuong_1812689.pdf)
+- Highly recommend to deep dive into [system modeling and control](https://drive.google.com/file/d/1Jd4t0ZNPOKRBkgVSiwPoOUvK1DkX8ZBU/view?usp=drive_link) 
 
 ---
 
