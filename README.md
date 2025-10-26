@@ -61,7 +61,8 @@ In accordance to multiple hardware variants, Software versions are splitted into
 - Sandbox for STM32F103C8T6 variant
 - Sandbox for STM32F407 variant
 
-This project utilizes well-supported [IDE **STM32CUBE**](https://www.st.com/en/development-tools/stm32cubeide.html) to achieve HAL from different hardware variants
+This project utilizes well-supported [IDE STM32CUBE](https://www.st.com/en/development-tools/stm32cubeide.html) to achieve HAL from different hardware variants
+
 Sandboxes differs in terms of: 
 - Hardware configuration set
 - Software setup (bare while loop or RTOS setup)
