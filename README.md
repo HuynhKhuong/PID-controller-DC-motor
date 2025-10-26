@@ -1,6 +1,6 @@
 # PID Controller DC Motor
 
-A PID (Proportional-Integral-Derivative) controller implementation for DC motor speed and position control. This project revisits and improves upon a university capstone project, demonstrating advanced motor control techniques.
+A PID (Proportional-Integral-Derivative) controller implementation for DC motor speed and position control. This project revisits and improves upon my university capstone project.
 
 ## Table of Contents
 
@@ -15,19 +15,16 @@ A PID (Proportional-Integral-Derivative) controller implementation for DC motor 
 - [Configuration](#configuration)
 - [Examples](#examples)
 - [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
-This project implements a PID controller for precise DC motor control. The PID algorithm continuously calculates an error value as the difference between a desired setpoint and a measured process variable, applying a correction based on proportional, integral, and derivative terms.
+This project implements a PID controller for precise DC motor control (In terms of Position and Velocity). The PID algorithm continuously calculates an error value as the difference between a desired setpoint and a measured process variable, applying a correction based on proportional, integral, and derivative terms.
 
 ### What is PID Control?
 
-- **Proportional (P)**: Produces an output proportional to the current error
-- **Integral (I)**: Accounts for past errors and eliminates steady-state error
-- **Derivative (D)**: Predicts future errors based on the rate of change
+Review my [capstone projects report](docs\BAOCAODOAN1_HuynhKhuong_1812689.pdf)
+This document has well elaborated the foundational knowledge about PID controller! 
 
 ## Features
 
@@ -35,27 +32,18 @@ This project implements a PID controller for precise DC motor control. The PID a
 - Adjustable PID parameters (Kp, Ki, Kd)
 - Motor speed and position control modes
 - Real-time monitoring and data logging
-- Serial communication interface
-- Emergency stop functionality
-- Overshoot and oscillation minimization
+- Emergency stop functionality (*Place Holder*)
+- Overshoot and oscillation minimization (*Place Holder*)
 
 ## Hardware Requirements
 
-- Microcontroller (e.g., Arduino, ESP32, STM32)
-- DC Motor with encoder
-- Motor driver (e.g., L298N, TB6612FNG)
-- Power supply (appropriate voltage for your motor)
-- Connecting wires and breadboard
-- Optional: Display module for real-time monitoring
+- *Place holder*
+- *Place holder*
 
 ## Software Requirements
 
-- Arduino IDE / PlatformIO / Other development environment
-- Required libraries (update with actual libraries used):
-  - PID library (e.g., Arduino-PID-Library)
-  - Encoder library (e.g., Encoder.h)
-  - Communication library (if using external interface)
-- Serial monitor or plotting tool for data visualization
+- *Place holder* 
+- *Place holder* 
 
 ## Installation
 
@@ -70,25 +58,22 @@ cd PID-controller-DC-motor
 
 ```bash
 # Instructions for installing required libraries
-# Example for Arduino:
-# Open Arduino IDE -> Sketch -> Include Library -> Manage Libraries
-# Search and install required libraries
 ```
 
 ### 3. Hardware Setup
 
-1. Connect the motor driver to your microcontroller
-2. Wire the DC motor to the motor driver outputs
-3. Connect the encoder to digital input pins
-4. Ensure proper power supply connections
-5. Verify all ground connections
+1. *Place holder*
+2. *Place holder*
+3. *Place holder*
+4. *Place holder*
+5. *Place holder*
 
 ### 4. Upload the Code
 
-1. Open the project in your IDE
-2. Select the correct board and port
-3. Adjust configuration parameters in `config.h` (if applicable)
-4. Compile and upload to your microcontroller
+1. *Place holder*
+2. *Place holder*
+3. *Place holder*
+4. *Place holder*
 
 ## Usage
 
@@ -138,15 +123,7 @@ Adjust based on your specific motor and load characteristics.
 
 ## Circuit Diagram
 
-```
-[Add your circuit diagram here - include a schematic showing:
- - Microcontroller pin connections
- - Motor driver wiring (PWM, direction pins, enable)
- - Encoder connections (A, B channels)
- - Power supply connections
- - Any pull-up/pull-down resistors
- You can use tools like Fritzing, EasyEDA, or draw.io]
-```
+*TBD*
 
 ## Configuration
 
@@ -154,19 +131,8 @@ Edit the configuration parameters in the main file or `config.h`:
 
 ```cpp
 // PID Parameters
-#define KP 1.0
-#define KI 0.1
-#define KD 0.01
-
 // Motor Pins
-#define MOTOR_PIN1 9
-#define MOTOR_PIN2 10
-#define ENCODER_A 2
-#define ENCODER_B 3
-
 // Control Settings
-#define SAMPLE_TIME 10  // milliseconds
-#define MAX_SPEED 255
 ```
 
 ## Examples
@@ -175,57 +141,26 @@ Edit the configuration parameters in the main file or `config.h`:
 
 ```cpp
 // Set motor to maintain 100 RPM
-motor.setMode(SPEED_CONTROL);
-motor.setSetpoint(100);
-motor.start();
 ```
 
 ### Example 2: Position Control
 
 ```cpp
 // Move motor to 360 degrees position
-motor.setMode(POSITION_CONTROL);
-motor.setSetpoint(360);
-motor.start();
 ```
 
 ## Troubleshooting
 
 | Problem | Possible Cause | Solution |
 |---------|---------------|----------|
-| Motor oscillates | Kp too high | Reduce Kp value |
-| Slow response | Kp too low | Increase Kp value |
-| Steady-state error | Ki too low | Increase Ki value |
-| Overshoot | Kd too low or Ki too high | Adjust Kd and Ki |
-| Motor doesn't move | Wiring or power issue | Check connections and power supply |
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-Please ensure your code follows the existing style and includes appropriate documentation.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+| *Place Holder* | *Place Holder* | *Place Holder* |
+| *Place Holder* | *Place Holder* | *Place Holder* |
+| *Place Holder* | *Place Holder* | *Place Holder* |
+| *Place Holder* | *Place Holder* | *Place Holder* |
+| *Place Holder* | *Place Holder* | *Place Holder* |
 
 ## Acknowledgments
-
-- Original capstone project from university
-- PID control theory resources
-- Open-source community contributions
-- [Add any specific references or inspirations]
-
-## Contact
-
-Project Link: [https://github.com/HuynhKhuong/PID-controller-DC-motor](https://github.com/HuynhKhuong/PID-controller-DC-motor)
+- [Original capstone project from university](docs\BAOCAODOAN1_HuynhKhuong_1812689.pdf)
 
 ---
 
-**Note**: This is a template README. Please update the sections with your specific implementation details, actual hardware specifications, and code examples.
