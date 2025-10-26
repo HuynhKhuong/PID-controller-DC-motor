@@ -9,3 +9,23 @@
 | H-bridge | L298 |- Dual Full Bridge Driver <br> - VDC 5~30VDC; Max consumed current (each channel): 2A; <br> - maxed consumed power: 25W (each channel)|
 
 ## Hardware setup
+
+### PWM for speed/position control
+
+PWM (pulse width modulation) is accomplished by Hardware Timer of STM32F103C8T6:
+- TIM3 / Channel 1 / Output pin A6
+
+PWM parameters: 
+- Recommendeded the pulse frequency for hobby applications is 1kHz - 10kHz
+ - Advantages: Good balance of performance and efficiency, minimal audible noise
+ - Disadvantages: Requires faster switching components
+ - Best for: General-purpose robotics, hobby projects, small to medium motors
+- To achieve such pulse frequency, below calculation is needed
+
+> Given the pulse frequency = 8kHz
+> TIM3 frequency is fed from APB2 bus (16MHz)
+> Resolution is decided = 1000 for a well balance between performance and calculation
+> Quantum frequency (qf = 1000 * 8kHz = 8MHz)
+> Prescaler value = 2
+
+*Note: value will be adjusted based on actual performance*
